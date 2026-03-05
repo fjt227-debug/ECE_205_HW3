@@ -1,15 +1,15 @@
-// ECE205HW3_Q1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//ECE205HW3_Q1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 #include <iostream>
 using namespace std;
 
-// Gets hours and minutes from the user
+//Gets hours and minutes from the user
 void Input(int& hours, int& minutes)
 {
     cin >> hours >> minutes;
 }
 
-// Converts 24 hour time to 12 hour time
-// Sets AmPm to 'A' for AM, 'P' for PM
+//Converts 24 hour time to 12 hour time
+//Sets AmPm to 'A' for AM, 'P' for PM
 void convert24to12(int hours, int& hours12, char& AmPm)
 {
     if (hours < 12) //If hours are less than 12 print A
@@ -30,7 +30,7 @@ void convert24to12(int hours, int& hours12, char& AmPm)
     }
 }
 
-// Calculates elapsed time in minutes between start and end times
+//Calculates elapsed time in minutes between start and end times
 int elapsedMinutes(int startHours, int startMinutes, int endHours, int endMinutes)
 {
     int elapsed;
@@ -53,7 +53,7 @@ int elapsedMinutes(int startHours, int startMinutes, int endHours, int endMinute
     return elapsed;
 }
 
-// Displays the 12 hour formatted time with AM/PM
+//Displays the 12 hour formatted time with AM/PM
 void displayOutput(int hours12, int minutes, char AmPm)
 {
     cout << hours12 << ":"; //Prints hours in the 12 hour format then a semicolon 
@@ -92,4 +92,5 @@ int main()
         cout << endl;
     } while (again == 'y' || again == 'Y'); //Do while loop for the y or capital Y response 
     return 0;
+
 }
