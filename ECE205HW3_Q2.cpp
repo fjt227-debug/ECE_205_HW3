@@ -1,11 +1,11 @@
-// ECE205HW3_Q2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//ECE205HW3_Q2.cpp : This file contains the 'main' function. Program execution begins and ends there.
 #include <iostream>
 #include <cmath>
 using namespace std;
 
-// Computes area and perimeter of a triangle given sides a, b, c
-// Sets area and perimeter by reference
-// If sides do not form a valid triangle, sets both to 0
+//Computes area and perimeter of a triangle given sides a, b, c
+//Sets area and perimeter by reference
+//If sides do not form a valid triangle, sets both to 0
 void triangleCalc(double a, double b, double c, double& area, double& perimeter) //Function used to calculate triange area and perimeter
 {
     // Check if sides form a valid triangle
@@ -53,7 +53,8 @@ int main()
         cin >> again;
         cout << endl;
 
-    } while (again == 'y' || again == 'Y'); // Do while loop asking the user if they want to input again
+    } while (again == 'y' || again == 'Y'); //Do while loop asking the user if they want to input again
 
     return 0;
 }
+
