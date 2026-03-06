@@ -26,7 +26,7 @@ int changeMinutes(int startTime, int endTime) //Function that takes two 4-digit 
 int main()
 {
     int startTime, endTime; //Variables to store the military time inputs from the user
-    char again; //Variable to store the user's choice to repeat or quit
+    char again; //Varible for the user if they want to go again
     do 
     {
         cout << "Enter start time (0000 to 2359): " << endl; //Ask user for start time
@@ -45,6 +45,9 @@ int main()
     } while (again == 'y' || again == 'Y'); //Do while loop for the y or capital Y response
     return 0; 
 }
+
+
+
 
 
 
