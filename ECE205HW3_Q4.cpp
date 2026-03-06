@@ -25,7 +25,7 @@ void convert(int pounds, int ounces, int& kilograms, int& grams) //function that
 //Displays the converted weight in kilograms and grams
 void displayOutput(int kilograms, int grams) //function that prints the result
 {
-    cout << "Equivalent weight: " << kilograms << "kg " << grams << "g" << endl; // Print the result 
+    cout << "Equivalent weight: " << kilograms << "kg " << grams << "g" << endl; //Print the result 
 }
 
 int main()
@@ -44,4 +44,5 @@ int main()
         cout << endl; 
     } while (again == 'y' || again == 'Y'); //Do while loop for the y or capital Y response
     return 0; 
+
 }
